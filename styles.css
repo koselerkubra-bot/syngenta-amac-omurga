@@ -826,6 +826,12 @@ img { max-width: 100%; display: block; }
   height: 140px;
   background: rgba(255,255,255,0.15);
   border-radius: 2px;
+  background-size: cover;
+  background-position: center;
+}
+.pillar-img-1 { background-image: url('assets/images/pillars/pillar-scientists.webp'); }
+.pillar-img-2 { background-image: url('assets/images/pillars/pillar-agronomists.webp'); }
+.pillar-img-3 { background-image: url('assets/images/pillars/pillar-breeders.webp'); }
   margin-bottom: 16px;
 }
 
