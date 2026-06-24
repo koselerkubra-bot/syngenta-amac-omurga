@@ -1,0 +1,1 @@
+﻿# Syngenta Amacımız ve Omurgamız
