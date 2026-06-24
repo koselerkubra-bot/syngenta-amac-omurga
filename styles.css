@@ -466,7 +466,7 @@ img { max-width: 100%; display: block; }
 }
 
 .bottom-card-img {
-  height: 100px;
+  height: 140px;
   background: var(--gray-100);
   margin-bottom: 12px;
   border-radius: 2px;
