@@ -24,10 +24,19 @@
 
 <nav class="tab-nav">
   <a href="index.html">Ana Sayfa</a>
-  <a href="omurgamiz.html" class="active">Omurgamız ▾</a>
-  <a href="#">Mikro Becerilerimiz</a>
-  <a href="#">Çığır Açan Hikayelerimiz</a>
-  <a href="#">Materyaller ve Kaynaklar</a>
+  <div class="tab-dropdown">
+    <a href="omurgamiz.html" class="active">Omurgamız ▾</a>
+    <div class="tab-dropdown-menu">
+      <a href="omurgamiz.html" class="current">Omurgamız</a>
+      <a href="amacimiz.html">Amacımız</a>
+      <a href="hedefimiz-ve-stratejimiz.html">Hedefimiz ve Stratejimiz</a>
+      <a href="davranislarimiz.html">Davranışlarımız</a>
+      <a href="hikayemiz.html">Hikayemiz</a>
+    </div>
+  </div>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Mikro Becerilerimiz</a>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Çığır Açan Hikayelerimiz</a>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Materyaller ve Kaynaklar</a>
   <div class="nav-right">
     <span>☆ Takip etmiyorsunuz</span>
     <span>↗ Paylaş ▾</span>
@@ -47,7 +56,7 @@
       <strong>Davranışlarımız</strong> ve <strong>Hikayemizin</strong> Syngenta Group için hem
       "neden"imizi hem de "nasıl"ımızı birleştirmek için nasıl bağlandığının büyük resmini gösterir.</p>
 
-      <p>Tüm Syngenta Group çalışanları Omurgamızın her unsurunda temsil edilir; farklı iş birimleri
+      <p style="margin-top: 16px;">Tüm Syngenta Group çalışanları Omurgamızın her unsurunda temsil edilir; farklı iş birimleri
       kendi benzersiz yollarıyla katkıda bulunur. Bu Omurgayı, neden var olduğumuzu, neyi başarmaya
       çalıştığımızı, kimin için yaptığımızı ve oraya nasıl ulaşacağımızı açıklamamız gerektiğinde
       işimizin bir temsili olarak kullanırız.</p>
@@ -64,9 +73,23 @@
         </div>
       </div>
 
-      <div>
+      <div style="margin-top: 16px;">
         <div class="video-label">Omurga Tanıtım Filmi</div>
-        <div class="video-placeholder" title="Omurga Tanıtım Filmi"></div>
+        <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; border-radius: 4px; background: #1a1a1a;">
+          <iframe
+            src="https://videos.syngenta.com/media/Our%20Backbone%20-%20Explainer%20film/1_greq0ukf"
+            style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"
+            allowfullscreen
+            allow="autoplay *; fullscreen *; encrypted-media *">
+          </iframe>
+        </div>
+        <p style="margin-top: 8px; font-size: 13px;">
+          <a href="https://videos.syngenta.com/media/Our%20Backbone%20-%20Explainer%20film/1_greq0ukf"
+             target="_blank" rel="noopener"
+             style="color: var(--magenta); text-decoration: underline;">
+            ↗ Video yüklenmezse buradan açın
+          </a>
+        </p>
       </div>
     </div>
 
@@ -74,9 +97,14 @@
       <h3>Materyaller aşağıda yer alıyor.</h3>
       <h4>Omurga Marka Materyalleri</h4>
 
-      <a href="#" class="asset-btn">Syngenta Group Omurga Materyalleri</a>
-      <a href="#" class="asset-btn">Syngenta CP Omurga Materyalleri</a>
-      <a href="#" class="asset-btn">Syngenta Seeds Omurga Materyalleri</a>
+      <a href="https://trinity.syngentagroup.com/guidelines/guide/e041549a-b820-4ef0-94b9-af2905973d4c/page/cb6f0d63-16ba-47b2-8809-ef433d10b498"
+         target="_blank" rel="noopener" class="asset-btn">Syngenta Group Omurga Materyalleri</a>
+
+      <a href="https://trinity.syngenta.com/guidelines/guide/53096b6d-0f14-4bd2-b9d6-68f6e8f14c3e/page/e81e9e74-e872-4353-9524-2dae0ec25ce8"
+         target="_blank" rel="noopener" class="asset-btn">Syngenta CP Omurga Materyalleri</a>
+
+      <a href="https://trinityseeds.syngenta.com/guidelines/guide/e2e330b8-cea6-4d01-950b-da6f9c021927/page/38f8d616-4af9-42eb-93e1-71c392471b57"
+         target="_blank" rel="noopener" class="asset-btn">Syngenta Seeds Omurga Materyalleri</a>
 
       <div class="asset-list">
         <h3>İçerikler:</h3>

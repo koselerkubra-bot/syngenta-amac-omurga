@@ -24,10 +24,19 @@
 
 <nav class="tab-nav">
   <a href="index.html">Ana Sayfa</a>
-  <a href="omurgamiz.html" class="active">Omurgamız ▾</a>
-  <a href="#">Mikro Becerilerimiz</a>
-  <a href="#">Çığır Açan Hikayelerimiz</a>
-  <a href="#">Materyaller ve Kaynaklar</a>
+  <div class="tab-dropdown">
+    <a href="omurgamiz.html" class="active">Omurgamız ▾</a>
+    <div class="tab-dropdown-menu">
+      <a href="omurgamiz.html">Omurgamız</a>
+      <a href="amacimiz.html">Amacımız</a>
+      <a href="hedefimiz-ve-stratejimiz.html">Hedefimiz ve Stratejimiz</a>
+      <a href="davranislarimiz.html" class="current">Davranışlarımız</a>
+      <a href="hikayemiz.html">Hikayemiz</a>
+    </div>
+  </div>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Mikro Becerilerimiz</a>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Çığır Açan Hikayelerimiz</a>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Materyaller ve Kaynaklar</a>
   <div class="nav-right">
     <span>☆ Takip etmiyorsunuz</span>
     <span>↗ Paylaş ▾</span>

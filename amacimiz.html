@@ -24,10 +24,19 @@
 
 <nav class="tab-nav">
   <a href="index.html">Ana Sayfa</a>
-  <a href="omurgamiz.html" class="active">Omurgamız ▾</a>
-  <a href="#">Mikro Becerilerimiz</a>
-  <a href="#">Çığır Açan Hikayelerimiz</a>
-  <a href="#">Materyaller ve Kaynaklar</a>
+  <div class="tab-dropdown">
+    <a href="omurgamiz.html" class="active">Omurgamız ▾</a>
+    <div class="tab-dropdown-menu">
+      <a href="omurgamiz.html">Omurgamız</a>
+      <a href="amacimiz.html" class="current">Amacımız</a>
+      <a href="hedefimiz-ve-stratejimiz.html">Hedefimiz ve Stratejimiz</a>
+      <a href="davranislarimiz.html">Davranışlarımız</a>
+      <a href="hikayemiz.html">Hikayemiz</a>
+    </div>
+  </div>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Mikro Becerilerimiz</a>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Çığır Açan Hikayelerimiz</a>
+  <a href="#" class="tab-soon" onclick="alert('Bu bölüm yakında eklenecektir.'); return false;">Materyaller ve Kaynaklar</a>
   <div class="nav-right">
     <span>☆ Takip etmiyorsunuz</span>
     <span>↗ Paylaş ▾</span>
@@ -46,23 +55,18 @@
       sürdürülebilir ve çeşitlendirilmiş iş değerini büyük ölçekte inşa ediyoruz.</p>
 
       <!-- TAGLINE WORDMARK -->
-      <!--
-        TAGLINE FİNALİSTİ:
-        Final çeviri Viva Engage oylaması ile belirlenecek.
-        Aşağıdaki, yer tutucu / çalışan versiyon.
-      -->
       <div class="tagline-wordmark">
         <div class="tagline-text">
           <span class="leaf">🌱</span>
-          Her tarlada<br>
-          fark yaratan<br>
-          yenilikler<span style="font-size: 0.5em; vertical-align: super;">™</span>
+          Breakthroughs<br>
+          for farmers,<br>
+          in every field<span style="font-size: 0.5em; vertical-align: super;">™</span>
         </div>
       </div>
 
       <div>
         <div class="video-label">Amaç Filmi</div>
-        <div class="video-placeholder" title="Amaç Filmi"></div>
+        <div class="video-placeholder" title="Amaç Filmi" onclick="alert('Video yakında eklenecektir.');"></div>
       </div>
     </div>
 
@@ -70,9 +74,9 @@
       <h3>Materyaller aşağıda yer alıyor.</h3>
       <h4>Amaç Marka Materyalleri</h4>
 
-      <a href="#" class="asset-btn">Syngenta Group Amaç Materyalleri (Trinity)</a>
-      <a href="#" class="asset-btn">Syngenta CP Amaç Materyalleri (Trinity)</a>
-      <a href="#" class="asset-btn">Syngenta Seeds Amaç Materyalleri (Trinity)</a>
+      <a href="#" class="asset-btn asset-btn-soon" onclick="alert('Bağlantı yakında eklenecektir.'); return false;">Syngenta Group Amaç Materyalleri (Trinity)</a>
+      <a href="#" class="asset-btn asset-btn-soon" onclick="alert('Bağlantı yakında eklenecektir.'); return false;">Syngenta CP Amaç Materyalleri (Trinity)</a>
+      <a href="#" class="asset-btn asset-btn-soon" onclick="alert('Bağlantı yakında eklenecektir.'); return false;">Syngenta Seeds Amaç Materyalleri (Trinity)</a>
 
       <div class="asset-list">
         <h3>İçerikler:</h3>
@@ -82,12 +86,10 @@
           <li><span>Liderler için Amaç Araç Seti</span></li>
           <li><span>İK ve İletişim Profesyonelleri için Amaç Araç Seti</span></li>
           <li><span>Amaç Marka Kılavuzu</span></li>
-          <li><span>Animasyonlu Amaç Logosu (kurumsal logo ile ve logosuz)</span></li>
-          <li><span>Statik Amaç Logosu (kurumsal logo ile ve logosuz)</span></li>
+          <li><span>Animasyonlu &amp; Statik Amaç Logosu</span></li>
           <li><span>Amaç E-posta İmzaları</span></li>
           <li><span>Amaç Zoom Arka Planı</span></li>
           <li><span>Amaç MS Word Şablonları</span></li>
-          <li><span>Amaç Çeviri Kilit Şablonu</span></li>
           <li><span>Amaç PPT Kapanış Slaytı Şablonu</span></li>
         </ul>
       </div>

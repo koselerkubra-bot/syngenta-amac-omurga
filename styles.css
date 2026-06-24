@@ -151,6 +151,64 @@ img { max-width: 100%; display: block; }
   margin-bottom: -1px;
 }
 
+/* Henüz oluşturulmamış sayfalar için disabled state */
+.tab-nav a.tab-soon {
+  color: var(--gray-500);
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+.tab-nav a.tab-soon:hover {
+  color: var(--gray-500);
+}
+.tab-nav a.tab-soon::after {
+  content: " ⚪";
+  font-size: 9px;
+  opacity: 0.5;
+}
+
+/* Dropdown tab menü (Omurgamız altında alt sayfalar) */
+.tab-dropdown {
+  position: relative;
+  display: inline-block;
+}
+.tab-dropdown > a {
+  padding: 16px 0;
+  display: inline-block;
+}
+.tab-dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: -16px;
+  background: var(--white);
+  border: 1px solid var(--gray-300);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  min-width: 240px;
+  z-index: 50;
+  padding: 4px 0;
+}
+.tab-dropdown:hover .tab-dropdown-menu,
+.tab-dropdown:focus-within .tab-dropdown-menu {
+  display: block;
+}
+.tab-dropdown-menu a {
+  display: block;
+  padding: 10px 18px;
+  font-size: 14px;
+  color: var(--gray-700);
+  border: none;
+  margin: 0;
+  font-weight: 400;
+}
+.tab-dropdown-menu a:hover {
+  background: var(--gray-100);
+  color: var(--magenta);
+}
+.tab-dropdown-menu a.current {
+  color: var(--magenta);
+  font-weight: 600;
+}
+
 .tab-nav .nav-right {
   margin-left: auto;
   display: flex;
@@ -209,11 +267,11 @@ img { max-width: 100%; display: block; }
 }
 .hero-ambition {
   background-image:
-    linear-gradient(135deg, rgba(20, 40, 70, 0.5), rgba(10, 20, 40, 0.7)),
-    url('assets/images/hero/ambition-hero.webp'),
-    radial-gradient(ellipse at 50% 80%, #4a7ab8 0%, #0a1830 70%);
-  background-size: cover, cover, cover;
+    linear-gradient(180deg, transparent 40%, rgba(0,0,0,0.55) 100%),
+    url('assets/images/hero/ambition-hero.webp');
+  background-size: cover, cover;
   background-position: center;
+  background-color: #fff;
 }
 .hero-behaviors {
   background-image:
@@ -287,6 +345,20 @@ img { max-width: 100%; display: block; }
   font-size: 14px;
 }
 
+/* Bağlantı henüz eklenmemiş materyal butonları */
+.asset-btn-soon {
+  background: var(--gray-500);
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+.asset-btn-soon:hover { background: var(--gray-500); }
+.asset-btn-soon::after {
+  content: " ⚪";
+  font-size: 10px;
+  margin-left: 8px;
+  opacity: 0.7;
+}
+
 .asset-list { margin-top: 24px; }
 .asset-list h3 { color: var(--magenta); margin-bottom: 12px; }
 .asset-list ul { list-style: disc; padding-left: 20px; }
@@ -347,6 +419,21 @@ img { max-width: 100%; display: block; }
   align-items: center;
   justify-content: center;
   font-size: 22px;
+}
+
+.video-placeholder::before {
+  content: "Video yakında yüklenecektir";
+  position: absolute;
+  bottom: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: rgba(255,255,255,0.85);
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  background: rgba(0,0,0,0.35);
+  padding: 4px 10px;
+  border-radius: 12px;
+  z-index: 2;
 }
 
 .video-label {
@@ -507,11 +594,11 @@ img { max-width: 100%; display: block; }
 
 .home-card.ambition {
   background-image:
-    linear-gradient(135deg, rgba(20, 60, 100, 0.5), rgba(10, 30, 60, 0.7)),
-    url('assets/images/home/ambition-card.webp'),
-    radial-gradient(ellipse at 70% 30%, #4a7ab8 0%, #0a1830 70%);
-  background-size: cover, cover, cover;
+    linear-gradient(180deg, transparent 55%, rgba(0,0,0,0.5) 100%),
+    url('assets/images/home/ambition-card.webp');
+  background-size: cover, cover;
   background-position: center;
+  background-color: #fff;
 }
 
 .home-card.behaviors {
