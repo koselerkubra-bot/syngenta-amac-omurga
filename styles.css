@@ -956,3 +956,79 @@ img { max-width: 100%; display: block; }
 .note-tagline-final {
   /* Tagline finalist swap işareti - production öncesi yorum satırı haline getirilebilir */
 }
+
+/* ============================================================
+   v12 OVERRIDES — clean rendering for white-background images
+   Image 4 (Ambition/Strategy/Purpose/Behaviors/Story) on Omurgamız
+   Image 6 (Breakthroughs green wordmark) on Amacımız hero
+   ============================================================ */
+
+/* ---- Amacımız hero (image 6: green logo on white) ---- */
+.hero-purpose {
+  background-image: url('assets/images/hero/purpose-tagline.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+.hero-purpose::after { display: none; }
+.hero-purpose h2 {
+  color: var(--magenta);
+  text-shadow: none;
+  background: rgba(255,255,255,0.85);
+  padding: 6px 14px;
+  border-radius: 2px;
+  align-self: flex-end;
+  font-weight: 600;
+}
+
+/* ---- Omurgamız home card (image 4: green text on white) ---- */
+.home-card.backbone {
+  background-image: url('assets/images/home/backbone-card.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+.home-card.backbone::after {
+  background: linear-gradient(180deg, transparent 60%, rgba(0,0,0,0.55) 100%);
+}
+
+/* ---- Omurgamız bottom thumbnail (image 4) ---- */
+.bc-img-backbone {
+  background-image: url('assets/images/home/backbone-card.webp');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #ffffff;
+}
+
+/* ---- Amacımız home card (image 3 already has tagline) ----
+   Image 3 contains the "Breakthroughs for farmers" tagline baked-in,
+   so we hide the HTML tagline overlay to avoid duplication.            */
+.home-card.purpose-main .tagline-overlay {
+  background: linear-gradient(180deg, transparent 70%, rgba(0,0,0,0.7) 100%);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 24px;
+  box-sizing: border-box;
+}
+.home-card.purpose-main .tagline-main,
+.home-card.purpose-main .leaf-icon { display: none; }
+.home-card.purpose-main .tagline-overlay > div {
+  font-size: 22px !important;
+  margin-top: 0 !important;
+  opacity: 1 !important;
+}
+
+/* ---- Inline omurgamız visual on omurgamiz.html ---- */
+.omurga-visual {
+  display: block;
+  max-width: 360px;
+  width: 100%;
+  height: auto;
+  margin: 24px auto;
+}
