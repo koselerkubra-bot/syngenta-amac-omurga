@@ -900,7 +900,7 @@ img { max-width: 100%; display: block; }
 .read-more-btn:hover { background: var(--magenta-deep); }
 
 .story-img {
-  height: 120px;
+  height: 200px;
   background: linear-gradient(135deg, #c5a55a, #6a4c20);
   border-radius: 2px;
   background-size: cover;
